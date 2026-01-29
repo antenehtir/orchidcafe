@@ -1,0 +1,131 @@
+:root {
+  --primary: #5c7c6f;
+  --accent: #c8a951;
+  --bg: #f3f5f2;
+  --card: rgba(255,255,255,0.9);
+  --text: #2f2f2f;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background:
+    linear-gradient(rgba(243,245,242,.95), rgba(243,245,242,.95)),
+    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085');
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--text);
+}
+
+.hero {
+  height: 60vh;
+  background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93')
+    center/cover no-repeat;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.45);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+
+.intro,
+.menu,
+.payment {
+  max-width: 900px;
+  margin: 40px auto;
+  background: var(--card);
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.08);
+  backdrop-filter: blur(8px);
+}
+
+.menu-section {
+  margin-bottom: 50px;
+}
+
+.menu-section h2,
+.payment h2 {
+  font-family: 'Playfair Display', serif;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.menu-item p {
+  font-size: .9rem;
+  color: #555;
+}
+
+.highlight {
+  background: linear-gradient(135deg,#eef3f1,#f9faf8);
+  padding: 18px;
+  border-left: 5px solid var(--accent);
+  border-radius: 12px;
+}
+
+/* PAYMENT */
+.payment-note {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.payment-card {
+  background: #fff;
+  width: 180px;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: transform .3s ease;
+}
+
+.payment-card:hover {
+  transform: translateY(-6px);
+}
+
+.payment-card img {
+  max-width: 80px;
+  margin-bottom: 10px;
+}
+
+.payment-card span {
+  font-weight: 500;
+}
+
+.payment-footer {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: .85rem;
+  color: #666;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+}
